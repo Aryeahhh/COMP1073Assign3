@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Title of the page -->
+    <title>Make Your Own Pizza</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- Script for pizza customization -->
+    <script src="js/pizza.js" defer></script>
+</head>
+<body>
+    <p id="StudentID"></p>
+    <button onclick="getStudentID()">Get Student ID</button>
+    <!-- Main container for the pizza customization interface -->
+    <div class="container">
+        <!-- Heading for the page -->
+        <h1>Make Your Own Pizza</h1>
+        <!-- Container for the pizza customization options -->
+        <div class="pizza">
+            <!-- Dropdown for selecting crust type -->
+            <div class="crust">
+                <label>Crust</label>
+                <select id="crust">
+                    <option value="thin">Thin</option>
+                    <option value="thick">Thick</option>
+                    <option value="cheese">Cheese Burst</option>
+                </select>
+            </div>
+            <!-- Dropdown for selecting cheese type -->
+            <div class="cheese">
+                <label>Cheese</label>
+                <select id="cheese">
+                    <option value="mozzarella">Mozzarella</option>
+                    <option value="cheddar">Cheddar</option>
+                    <option value="parmesan">Parmesan</option>
+                </select>
+            </div>
+            <!-- Dropdown for selecting sauce type -->
+            <div class="sauce">
+                <label>Sauce</label>
+                <select id="sauce">
+                    <option value="tomato">Tomato</option>
+                    <option value="pesto">Pesto</option>
+                    <option value="white">White</option>
+                </select>
+            </div>
+            <!-- Checkboxes for selecting toppings -->
+            <div class="toppings">
+                <label>Toppings</label>
+                <div class="topping">
+                    <input type="checkbox" id="topping1" value="pepperoni">
+                    <label for="topping1">Pepperoni</label>
+                </div>
+                <div class="topping">
+                    <input type="checkbox" id="topping2" value="mushroom">
+                    <label for="topping2">Mushroom</label>
+                </div>
+                <div class="topping">
+                    <input type="checkbox" id="topping3" value="onion">
+                    <label for="topping3">Onion</label>
+                </div>
+                <div class="topping">
+                    <input type="checkbox" id="topping4" value="olive">
+                    <label for="topping4">Olive</label>
+                </div>
+                <div class="topping">
+                    <input type="checkbox" id="topping5" value="bellpepper">
+                    <label for="topping5">Bell Pepper</label>
+                </div>
+            </div>
+            <!-- Radio buttons for selecting pizza size -->
+            <div class="size">
+                <label>Size</label>
+                <div class="size">
+                    <input type="radio" name="size" id="size1" value="small">
+                    <label for="size1">Small</label>
+                </div>
+                <div class="size">
+                    <input type="radio" name="size" id="size2" value="medium">
+                    <label for="size2">Medium</label>
+                </div>
+                <div class="size">
+                    <input type="radio" name="size" id="size3" value="large">
+                    <label for="size3">Large</label>
+                </div>
+            </div>
+            <!-- Button for placing the order -->
+            <button onclick="order()">Order</button><br>    
+            <!-- Label to display the description of the ordered pizza -->
+            <label id="pizzaDescription"></label>
+        </div>
+    </div>
+</body>
+</html>

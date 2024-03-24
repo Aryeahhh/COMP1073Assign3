@@ -1,0 +1,59 @@
+/* Set the font for the entire document */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Center the container and set its width to 80% of the parent element */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Center the main heading and set its color */
+h1 {
+    text-align: center;
+    color: #333;
+}
+p {
+    text-align: center;
+    color: #333;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Arrange the pizza form elements in a column and center them */
+.pizza {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Add some space below each form field */
+.crust, .cheese, .sauce, .toppings, .size {
+    margin-bottom: 20px;
+}
+
+/* Style the 'Order' button */
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Change the button's background color when it's hovered over */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the pizza description text */
+#pizzaDescription {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
